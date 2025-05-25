@@ -1,16 +1,86 @@
-# moodify
+# Moodify - AI-Based Music Playlist Generator
 
-A new Flutter project.
+![Moodify Logo](assets/images/sonnetlogo.png)
+
+Moodify is an innovative Flutter app that generates personalized music playlists based on your mood using AI-powered recommendations and seamless Spotify integration.
+
+---
+
+## Features
+
+- **AI-Powered Mood Detection:** Get music playlists tailored to your current mood using OpenAI's advanced language models.
+- **Spotify Integration:** Authenticate with Spotify and create playlists directly in your Spotify account.
+- **Custom OAuth Flow:** Secure and smooth authentication using custom URI schemes.
+- **Fancy Loading Animations:** Engaging and modern UI with animated loading screens during playlist sync.
+- **Cross-Platform Flutter App:** Works on Android and iOS with beautiful UI and smooth animations.
+- **Playlist Management:** Search and add songs accurately to Spotify playlists with advanced search queries.
+
+---
+
+## Screenshots
+
+![Home Screen](assets/images/sonnet.png)
+![Playlist Screen](assets/images/playlist_screen.png)
+
+---
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK 3.22.2 or later
+- Spotify Developer Account with Client ID and Secret
+- OpenAI API Key
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository
+2. Run `flutter pub get` to install dependencies
+3. Add your Spotify and OpenAI credentials in a `.env` file:
+
+    ```
+    SPOTIFY_CLIENT_ID=your_spotify_client_id
+    SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
+    OPENAI_API_KEY=your_openai_api_key
+    ```
+
+4. Configure AndroidManifest.xml and Info.plist for custom URI scheme `moodify://callback`
+5. Run the app on your device or emulator
+
+---
+
+## Usage
+
+- Launch the app and select your mood
+- Tap the Spotify button to authenticate and create a playlist
+- Enjoy your personalized playlist in Spotify
+
+---
+
+## Architecture
+
+- Flutter frontend with clean separation of UI and business logic
+- Uses REST APIs for OpenAI and Spotify
+- Custom deep link handling with `app_links` package
+- Modular and reusable components for loading animations and dialogs
+
+---
+
+## Future Enhancements
+
+- Machine learning based personalized recommendations
+- Social sharing and collaborative playlists
+- Offline mode and caching
+- Multi-platform support including web
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Contact
+
+For questions or feedback, contact Vivek Fatwani.
