@@ -1,6 +1,9 @@
 # Moodify - AI-Based Music Playlist Generator
 
-![Moodify Logo](assets/images/sonnetlogo.png)
+<p align="center">
+  <img src="assets/images/sonnetlogo.png" alt="Moodify Logo" width="120"/>
+</p>
+
 
 Moodify is an innovative Flutter app that generates personalized music playlists based on your mood using AI-powered recommendations and seamless Spotify integration.
 
@@ -19,8 +22,11 @@ Moodify is an innovative Flutter app that generates personalized music playlists
 
 ## Screenshots
 
-![Home Screen](assets/images/sonnet.png)
-![Playlist Screen](assets/images/playlist_screen.png)
+<p align="center">
+  <img src="assets/images/sonnet.png" alt="Home Screen" width="220"/>
+  <img src="assets/images/playlist_screen.png" alt="Playlist Screen" width="220"/>
+</p>
+
 
 ---
 
